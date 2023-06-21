@@ -43,6 +43,59 @@ export default function Home() {
 							RestocksAIO
 						</div>
 					</Link>
+					<Link href="https://www.nootify.eu/">
+						<div className="flex flex-row font-sans font-bold place-items-center ">
+							<Image
+								src="/Nootify.png"
+								width={60}
+								height={60}
+								alt="nootify logo"
+								className="pb-2 grayscale brightness-0"
+							/>
+							Nootify
+						</div>
+					</Link>
+					<Link href="https://astroalerts.co.uk/">
+						<div className="flex flex-row font-[Poppins] place-items-center ">
+							<Image
+								src="/astroalerts.svg"
+								width={50}
+								height={50}
+								alt="astro alerts logo"
+								className="pb-2 grayscale brightness-0"
+							/>
+							Astro Alerts
+						</div>
+					</Link>
+					<Link href="https://eu.notify.org/">
+						<div className="flex flex-row font-[sans-serif] font-bold place-items-center ">
+							<Image
+								src="/NotifyEU.svg"
+								width={30}
+								height={30}
+								alt="Notify EU logo"
+								className="mr-1 grayscale"
+							/>
+							NotifyEU
+						</div>
+					</Link>
+					<Link href="https://peachypings.com/">
+						<div className="flex flex-row font-[Poppins] font-bold place-items-center ">
+							<Image
+								src="/peachy.png"
+								width={40}
+								height={40}
+								alt="Notify EU logo"
+								className="mr-1 grayscale"
+							/>
+							Peachy Pings
+						</div>
+					</Link>
+					<Link href="https://www.kallisto.app/">
+						<div className="flex flex-row font-[sans-serif] font-bold place-items-center w-auto">
+							KallistoAIO
+						</div>
+					</Link>
 				</div>
 				<h2 className="font-light">
 					Partnered with industry leading communities
@@ -162,7 +215,10 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="h-12 bg-[url('http://localhost:3000/angle.png')] bg-cover scale-[-1] mt-[-1px]" />
-			<div className="flex flex-col items-center max-w-4xl px-3 m-auto my-24">
+			<div
+				className="flex flex-col items-center max-w-4xl px-3 m-auto my-24 scroll-m-40"
+				id="features"
+			>
 				<div className="relative">
 					<h2 className="p-6 text-4xl font-bold">Our Features</h2>
 					<Image
@@ -174,7 +230,7 @@ export default function Home() {
 					/>
 				</div>
 
-				<div className="grid grid-cols-2 gap-16 mt-16" id="features">
+				<div className="grid grid-cols-2 gap-16 mt-16">
 					<div className="flex flex-col col-span-full md:col-span-1">
 						<h3 className="text-2xl font-bold">Cash on Delivery</h3>
 						<p>
@@ -230,23 +286,45 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<div className="w-full py-12 bg-gray-100" id="pricing">
+			<div className="w-full py-16 bg-gray-100 scroll-m-36" id="pricing">
 				<div className="flex flex-col items-center justify-center m-auto max-w-7xl">
-					<h2 className="text-3xl font-bold">Choose the plan that&apos;s right for you</h2>
-					<h3 className="text-lg">Free 7 day trial on all plans above monthly</h3>
+					<h2 className="text-3xl font-bold">
+						Choose the plan that&apos;s right for you
+					</h2>
+					<h3 className="text-lg">
+						Free trial on all plans above monthly
+					</h3>
 					<div className="flex flex-col gap-8 mt-8 sm:flex-row">
 						<div className="flex flex-col flex-1 px-6 py-10 bg-white border border-gray-300 rounded shadow-lg">
-							<h2 className="text-2xl font-bold text-center">
-								Quarterly
-							</h2>
-							<h3 className="text-xl font-semibold text-center">
-								£25 / 3 months
+							<h3 className="text-2xl font-bold text-center ">
+								Monthly
 							</h3>
-							<p className="mt-4">
+							<h4 className="text-xl font-semibold text-center">
+								£10 / month
+							</h4>
+							<p className="mt-4 mb-4">
 								Our standard plan. Grow your reselling business
-								month by month. 7 day free trial.
+								month by month.
 							</p>
-							<div className="flex flex-row gap-2 mt-4">
+							<button className="px-6 py-2 mx-auto mt-auto border border-black rounded w-fit hover:bg-black hover:text-white">
+								Get Started
+							</button>
+						</div>
+						<div className="relative flex flex-col flex-1 px-6 py-10 bg-white border border-gray-300 rounded shadow-lg">
+							<div className="absolute top-2 right-[-10px]  rounded bg-gradient-to-tr from-primary to-blue-400 px-4 py-1 font-bold text-white">
+								Most Popular
+							</div>
+							<h3 className="text-2xl font-bold text-center">
+								Quarterly
+							</h3>
+							<h4 className="text-xl font-semibold text-center">
+								£25 / 3 months
+							</h4>
+							<p className="mt-4">
+								7 day free trial. Planning on sticking around?
+								Why not get your plan for cheaper.
+							</p>
+							<div className="flex flex-row gap-2 mt-4 mb-4">
 								<Image
 									src="/check.svg"
 									alt="check"
@@ -255,55 +333,34 @@ export default function Home() {
 								/>
 								17% Cheaper per month.
 							</div>
-							<button className="px-6 py-2 m-auto mt-6 text-white bg-black rounded w-fit">
+							<button className="px-6 py-2 mx-auto mt-auto text-white bg-black border border-black rounded w-fit hover:bg-white hover:text-black">
 								Start Free Trial
 							</button>
 						</div>
-						<div className="flex flex-col flex-1 px-6 py-10 bg-white border border-gray-300 rounded shadow-lg">
-							<h2 className="text-2xl font-bold text-center">
-								Quarterly
-							</h2>
-							<h3 className="text-xl font-semibold text-center">
-								£25 / 3 months
+						<div className="relative flex flex-col flex-1 px-6 py-10 bg-white border border-gray-300 rounded shadow-lg">
+							<div className="absolute top-2 right-[-10px]  rounded bg-gradient-to-tr from-[#56ab2f] to-[#a8e063] px-4 py-1 font-bold text-white">
+								Cheapest
+							</div>
+							<h3 className="text-2xl font-bold text-center">
+								Yearly
 							</h3>
+							<h4 className="text-xl font-semibold text-center">
+								£80 / anually
+							</h4>
 							<p className="mt-4">
-								Our standard plan. Grow your reselling business
-								month by month. 7 day free trial.
+								14 day free trial. The cheapest way to take your
+								business to the next level.
 							</p>
-							<div className="flex flex-row gap-2 mt-4">
+							<div className="flex flex-row gap-2 mt-4 mb-4">
 								<Image
 									src="/check.svg"
 									alt="check"
 									width={20}
 									height={20}
 								/>
-								17% Cheaper per month.
+								33% Cheaper per month.
 							</div>
-							<button className="px-6 py-2 m-auto mt-6 text-white bg-black rounded w-fit">
-								Start Free Trial
-							</button>
-						</div>
-						<div className="flex flex-col flex-1 px-6 py-10 bg-white border border-gray-300 rounded shadow-lg">
-							<h2 className="text-2xl font-bold text-center">
-								Quarterly
-							</h2>
-							<h3 className="text-xl font-semibold text-center">
-								£25 / 3 months
-							</h3>
-							<p className="mt-4">
-								Our standard plan. Grow your reselling business
-								month by month. 7 day free trial.
-							</p>
-							<div className="flex flex-row gap-2 mt-4">
-								<Image
-									src="/check.svg"
-									alt="check"
-									width={20}
-									height={20}
-								/>
-								17% Cheaper per month.
-							</div>
-							<button className="px-6 py-2 m-auto mt-6 text-white bg-black rounded w-fit">
+							<button className="px-6 py-2 mx-auto mt-auto text-white bg-black border border-black rounded w-fit hover:bg-white hover:text-black">
 								Start Free Trial
 							</button>
 						</div>
@@ -311,23 +368,78 @@ export default function Home() {
 				</div>
 			</div>
 			<div
-				className="flex flex-col items-center justify-center m-auto max-w-7xl"
+				className="flex flex-col items-center justify-center max-w-3xl m-auto mt-24 scroll-m-40"
 				id="faqs"
 			>
-				<h1>Frequently Asked Questions</h1>
-				<div className="flex flex-col sm:flex-row">
-					<div className="flex flex-col flex-1">
-						<h2>Monthly</h2>
-						<h3>£10 / month</h3>
-						<p>
-							Our standard plan. Grow your reselling business
-							month by month.
-						</p>
-						<button className="px-6 py-2 border border-black rounded w-fit">
-							Get Started
-						</button>
-					</div>
-				</div>
+				<h2 className="text-3xl font-bold ">
+					Frequently Asked Questions
+				</h2>
+				<section className="grid w-full grid-cols-1 mt-8 gap-y-4">
+					<details
+						className="p-6 rounded-lg open:bg-white open:ring-1 open:ring-black/5 open:shadow-lg "
+						open
+					>
+						<summary className="text-lg font-semibold text-center text-slate-900 hover:cursor-pointer">
+							Does the price vary for items that aren&apos;t
+							shoes?
+						</summary>
+						<div className="mt-3">
+							<p>
+								Nope! Extra fees may be applied if the packages
+								are very large, due to taking up a lot of our
+								reshippers space, but for the majority of items,
+								they will be the same price! If you are unsure
+								about if an item will incur an additional cost,
+								open a support ticket.
+							</p>
+						</div>
+					</details>
+					<details
+						className="p-6 rounded-lg open:bg-white open:ring-1 open:ring-black/5 open:shadow-lg "
+						open
+					>
+						<summary className="text-lg font-semibold text-center select-none hover:cursor-pointer">
+							If my order gets cancelled, will I still have to pay
+							a fee?
+						</summary>
+						<div className="mt-3 ">
+							<p>Nope! </p>
+						</div>
+					</details>
+					<details
+						className="p-6 rounded-lg open:bg-white open:ring-1 open:ring-black/5 open:shadow-lg "
+						open
+					>
+						<summary className="text-lg font-semibold text-center select-none hover:cursor-pointer">
+							What happens if I order an item, cannot cancel, and
+							it has to be returned?
+						</summary>
+						<div className="mt-3 ">
+							<p>
+								Our pricing for returns can be seen at{" "}
+								<Link href="#pricing">Pricing</Link>.
+							</p>
+						</div>
+					</details>
+					<details
+						className="p-6 rounded-lg open:bg-white open:ring-1 open:ring-black/5 open:shadow-lg "
+						open
+					>
+						<summary className="text-lg font-semibold text-center select-none hover:cursor-pointer">
+							Where is the set prices for home-to-home shipping?
+						</summary>
+						<div className="mt-3">
+							<p>
+								Beyond the reshipping fee there is no set
+								pricing, as it varies all over the globe. The
+								best thing to do is look at quotes online to
+								find the cheapest one that is good for you, and
+								making sure you agree the method with your
+								reshipper, and you&apos;re good to go!
+							</p>
+						</div>
+					</details>
+				</section>
 			</div>
 		</main>
 	);

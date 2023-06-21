@@ -42,6 +42,10 @@ const Navbar = () => {
 			window.removeEventListener("click", checkForClickOutsideMobileMenu);
 	}, [checkForClickOutsideMobileMenu]);
 
+	function scrollToTop() {
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	}
+
 	return (
 		<nav
 			className={`sticky top-0 z-10 items-center w-full duration-150 ease-linear ${
@@ -52,24 +56,25 @@ const Navbar = () => {
 			id="navbar"
 		>
 			<div className="flex justify-between px-3 m-auto xl:px-0 max-w-7xl">
-				<Image
-					src="./logo-dark.svg"
-					alt="logo"
-					height={40}
-					width={175}
-					className={`${navbarScrolled ? "block" : "hidden"} p-2`}
-					id="svg-dark"
-				/>
-
-				<Image
-					src="./logo.svg"
-					alt="logo"
-					height={40}
-					width={175}
-					className={`${navbarScrolled ? "hidden" : "block"} p-2`}
-					id="svg-light"
-				/>
-
+				
+					<Image
+						src="./logo-dark.svg"
+						alt="logo"
+						height={40}
+						width={175}
+						className={`${navbarScrolled ? "block" : "hidden"} p-2 cursor-pointer`}
+						id="svg-dark"
+						onClick={scrollToTop}
+					/>
+					<Image
+						src="./logo.svg"
+						alt="logo"
+						height={40}
+						width={175}
+						className={`${navbarScrolled ? "hidden" : "block"} p-2 cursor-pointer`}
+						id="svg-light"
+						onClick={scrollToTop}
+					/>
 				<div className="items-center hidden gap-12 sm:flex">
 					<Link href="#features">Features</Link>
 					<Link href="#pricing">Pricing</Link>

@@ -14,6 +14,10 @@ module.exports = {
       colors: {
         primary: '#3f48cc',
       },
+      fontFamily: {
+        'sans': ['Helvetica', 'Arial', 'sans-serif'],
+       
+      }
     },
   },
   plugins: [],

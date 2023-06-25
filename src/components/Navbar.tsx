@@ -49,7 +49,7 @@ const Navbar = () => {
 		<nav
 			className={`sticky top-0 z-10 items-center w-full duration-150 ease-linear ${
 				navbarScrolled
-					? "bg-white border-b border-gray-500 shadow-sm"
+					? "bg-white border-b border-gray-400 shadow-lg"
 					: "bg-primary text-white "
 			}`}
 			id="navbar"
@@ -82,7 +82,7 @@ const Navbar = () => {
 							className={`px-4 py-2 text-sm duration-150 ease-linear border rounded ${
 								navbarScrolled
 									? "border-black hover:bg-black hover:text-white"
-									: "hover:bg-white hover:text-black"
+									: "hover:bg-white hover:text-tblack"
 							}`}
 							id="navbar-button"
 						>
@@ -118,7 +118,7 @@ const Navbar = () => {
 						className={`${mobileMenuOpen ? "relative" : "hidden"}`}
 						id="mobile-menu"
 					>
-						<div className="absolute top-0 flex flex-col items-center gap-6 p-5 text-black bg-white border border-gray-600 rounded right-6">
+						<div className="absolute top-0 flex flex-col items-center gap-6 p-5 bg-white border border-gray-600 rounded text-tblack right-6">
 							<Link href="#features" onClick={closeMobileMenu}>
 								Features
 							</Link>

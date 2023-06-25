@@ -13,6 +13,7 @@ module.exports = {
       },
       colors: {
         primary: '#3f48cc',
+        tblack: '#222',
       },
       fontFamily: {
         'sans': ['Helvetica', 'Arial', 'sans-serif'],

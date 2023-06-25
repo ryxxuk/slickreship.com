@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
 	return (
-		<main className="flex flex-col">
+		<main className="flex flex-col text-tblack">
 			<div id="main-content" className="max-h-[870px]">
 				<div className="px-3 m-auto max-w-7xl">
 					<div className="flex flex-col items-center mt-20 text-center text-white">
@@ -44,7 +44,7 @@ export default function Home() {
 						</div>
 					</Link>
 					<Link href="https://www.nootify.eu/">
-						<div className="flex flex-row font-sans font-bold place-items-center ">
+						<div className="flex flex-row font-bold place-items-center ">
 							<Image
 								src="/Nootify.png"
 								width={60}
@@ -56,7 +56,7 @@ export default function Home() {
 						</div>
 					</Link>
 					<Link href="https://astroalerts.co.uk/">
-						<div className="flex flex-row font-[Poppins] place-items-center ">
+						<div className="flex flex-row place-items-center ">
 							<Image
 								src="/astroalerts.svg"
 								width={50}
@@ -68,7 +68,7 @@ export default function Home() {
 						</div>
 					</Link>
 					<Link href="https://eu.notify.org/">
-						<div className="flex flex-row font-[sans-serif] font-bold place-items-center ">
+						<div className="flex flex-row font-bold place-items-center ">
 							<Image
 								src="/NotifyEU.svg"
 								width={30}
@@ -80,7 +80,7 @@ export default function Home() {
 						</div>
 					</Link>
 					<Link href="https://peachypings.com/">
-						<div className="flex flex-row font-[Poppins] font-bold place-items-center ">
+						<div className="flex flex-row font-bold place-items-center ">
 							<Image
 								src="/peachy.png"
 								width={40}
@@ -92,7 +92,7 @@ export default function Home() {
 						</div>
 					</Link>
 					<Link href="https://www.kallisto.app/">
-						<div className="flex flex-row font-[sans-serif] font-bold place-items-center w-auto">
+						<div className="flex flex-row w-auto font-bold place-items-center">
 							KallistoAIO
 						</div>
 					</Link>
@@ -286,7 +286,10 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<div className="w-full px-2 py-16 bg-gray-100 scroll-m-36" id="pricing">
+			<div
+				className="w-full px-2 py-16 bg-gray-100 scroll-m-36"
+				id="pricing"
+			>
 				<div className="flex flex-col items-center justify-center m-auto max-w-7xl">
 					<h2 className="text-3xl font-bold">
 						Choose the plan that&apos;s right for you
@@ -294,7 +297,7 @@ export default function Home() {
 					<h3 className="text-lg">
 						Free trial on all plans above monthly
 					</h3>
-					<div className="flex flex-col gap-8 mt-8 sm:flex-row">
+					<div className="flex flex-col-reverse gap-8 mt-8 sm:flex-row">
 						<div className="flex flex-col flex-1 px-6 py-10 bg-white border border-gray-300 rounded shadow-lg">
 							<h3 className="text-2xl font-bold text-center ">
 								Monthly
@@ -306,7 +309,11 @@ export default function Home() {
 								Our standard plan. Grow your reselling business
 								month by month.
 							</p>
-							<Link href="https://dashboard.slickreship.com/checkout/plan_4f2E8FWmeOx0Q?d2c=true" target="_blank" className="mx-auto mt-auto">
+							<Link
+								href="https://dashboard.slickreship.com/checkout/plan_4f2E8FWmeOx0Q?d2c=true"
+								target="_blank"
+								className="mx-auto mt-auto"
+							>
 								<button className="px-6 py-2 border border-black rounded w-fit hover:bg-black hover:text-white">
 									Get Started
 								</button>
@@ -335,7 +342,11 @@ export default function Home() {
 								/>
 								17% Cheaper per month.
 							</div>
-							<Link href="https://dashboard.slickreship.com/checkout/plan_6iPUrMTxvApkb?d2c=true" target="_blank" className="mx-auto mt-auto">
+							<Link
+								href="https://dashboard.slickreship.com/checkout/plan_6iPUrMTxvApkb?d2c=true"
+								target="_blank"
+								className="mx-auto mt-auto"
+							>
 								<button className="px-6 py-2 mx-auto mt-auto text-white bg-black border border-black rounded w-fit hover:bg-white hover:text-black">
 									Start Free Trial
 								</button>
@@ -364,7 +375,11 @@ export default function Home() {
 								/>
 								33% Cheaper per month.
 							</div>
-							<Link href="https://dashboard.slickreship.com/checkout/plan_46zd5e8VXtR7L?d2c=true" target="_blank" className="mx-auto mt-auto">
+							<Link
+								href="https://dashboard.slickreship.com/checkout/plan_46zd5e8VXtR7L?d2c=true"
+								target="_blank"
+								className="mx-auto mt-auto"
+							>
 								<button className="px-6 py-2 mx-auto mt-auto text-white bg-black border border-black rounded w-fit hover:bg-white hover:text-black">
 									Start Free Trial
 								</button>

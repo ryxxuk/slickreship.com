@@ -148,7 +148,7 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="h-12 bg-[url('http://localhost:3000/angle.png')] bg-cover mt-32" />
+			<div className="h-12 bg-[url('http://www.slickreship.com/angle.png')] bg-cover mt-32" />
 			<div className="text-white bg-primary">
 				<div className="flex flex-col items-center px-3 m-auto my-24 max-w-7xl">
 					<h2 className="text-4xl font-bold text-center ">
@@ -214,7 +214,7 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<div className="h-12 bg-[url('http://localhost:3000/angle.png')] bg-cover scale-[-1] mt-[-1px]" />
+			<div className="h-12 bg-[url('http://www.slickreship.com/angle.png')] bg-cover scale-[-1] mt-[-1px]" />
 			<div
 				className="flex flex-col items-center max-w-4xl px-3 m-auto my-24 scroll-m-40"
 				id="features"
@@ -306,9 +306,11 @@ export default function Home() {
 								Our standard plan. Grow your reselling business
 								month by month.
 							</p>
-							<button className="px-6 py-2 mx-auto mt-auto border border-black rounded w-fit hover:bg-black hover:text-white">
-								Get Started
-							</button>
+							<Link href="https://dashboard.slickreship.com/checkout/plan_4f2E8FWmeOx0Q?d2c=true" target="_blank" className="mx-auto mt-auto">
+								<button className="px-6 py-2 border border-black rounded w-fit hover:bg-black hover:text-white">
+									Get Started
+								</button>
+							</Link>
 						</div>
 						<div className="relative flex flex-col flex-1 px-6 py-10 bg-white border border-gray-300 rounded shadow-lg">
 							<div className="absolute top-2 right-[-10px]  rounded bg-gradient-to-tr from-primary to-blue-400 px-4 py-1 font-bold text-white">
@@ -333,9 +335,11 @@ export default function Home() {
 								/>
 								17% Cheaper per month.
 							</div>
-							<button className="px-6 py-2 mx-auto mt-auto text-white bg-black border border-black rounded w-fit hover:bg-white hover:text-black">
-								Start Free Trial
-							</button>
+							<Link href="https://dashboard.slickreship.com/checkout/plan_6iPUrMTxvApkb?d2c=true" target="_blank" className="mx-auto mt-auto">
+								<button className="px-6 py-2 mx-auto mt-auto text-white bg-black border border-black rounded w-fit hover:bg-white hover:text-black">
+									Start Free Trial
+								</button>
+							</Link>
 						</div>
 						<div className="relative flex flex-col flex-1 px-6 py-10 bg-white border border-gray-300 rounded shadow-lg">
 							<div className="absolute top-2 right-[-10px]  rounded bg-gradient-to-tr from-[#56ab2f] to-[#a8e063] px-4 py-1 font-bold text-white">
@@ -360,9 +364,11 @@ export default function Home() {
 								/>
 								33% Cheaper per month.
 							</div>
-							<button className="px-6 py-2 mx-auto mt-auto text-white bg-black border border-black rounded w-fit hover:bg-white hover:text-black">
-								Start Free Trial
-							</button>
+							<Link href="https://dashboard.slickreship.com/checkout/plan_46zd5e8VXtR7L?d2c=true" target="_blank" className="mx-auto mt-auto">
+								<button className="px-6 py-2 mx-auto mt-auto text-white bg-black border border-black rounded w-fit hover:bg-white hover:text-black">
+									Start Free Trial
+								</button>
+							</Link>
 						</div>
 					</div>
 				</div>
@@ -375,10 +381,7 @@ export default function Home() {
 					Frequently Asked Questions
 				</h2>
 				<section className="grid w-full grid-cols-1 mt-8 gap-y-4">
-					<details
-						className="p-6 rounded-lg open:bg-white open:ring-1 open:ring-black/5 open:shadow-lg "
-						open
-					>
+					<details className="w-full p-6 rounded-lg open:ring-1 open:ring-black/5 open:shadow-lg">
 						<summary className="text-lg font-semibold text-center text-slate-900 hover:cursor-pointer">
 							Does the price vary for items that aren&apos;t
 							shoes?
@@ -394,10 +397,7 @@ export default function Home() {
 							</p>
 						</div>
 					</details>
-					<details
-						className="p-6 rounded-lg open:bg-white open:ring-1 open:ring-black/5 open:shadow-lg "
-						open
-					>
+					<details className="w-full p-6 rounded-lg open:ring-1 open:ring-black/5 open:shadow-lg ">
 						<summary className="text-lg font-semibold text-center select-none hover:cursor-pointer">
 							If my order gets cancelled, will I still have to pay
 							a fee?
@@ -406,10 +406,7 @@ export default function Home() {
 							<p>Nope! </p>
 						</div>
 					</details>
-					<details
-						className="p-6 rounded-lg open:bg-white open:ring-1 open:ring-black/5 open:shadow-lg "
-						open
-					>
+					<details className="w-full p-6 rounded-lg open:ring-1 open:ring-black/5 open:shadow-lg ">
 						<summary className="text-lg font-semibold text-center select-none hover:cursor-pointer">
 							What happens if I order an item, cannot cancel, and
 							it has to be returned?
@@ -421,10 +418,7 @@ export default function Home() {
 							</p>
 						</div>
 					</details>
-					<details
-						className="p-6 rounded-lg open:bg-white open:ring-1 open:ring-black/5 open:shadow-lg "
-						open
-					>
+					<details className="w-full p-6 rounded-lg open:ring-1 open:ring-black/5 open:shadow-lg ">
 						<summary className="text-lg font-semibold text-center select-none hover:cursor-pointer">
 							Where is the set prices for home-to-home shipping?
 						</summary>

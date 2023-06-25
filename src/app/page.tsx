@@ -7,10 +7,10 @@ export default function Home() {
 			<div id="main-content" className="max-h-[870px]">
 				<div className="px-3 m-auto max-w-7xl">
 					<div className="flex flex-col items-center mt-20 text-center text-white">
-						<h1 className="text-6xl font-bold">
+						<h1 className="text-3xl font-bold sm:text-6xl">
 							Scale your reselling business internationally
 						</h1>
-						<p className="max-w-2xl text-2xl font-light mt-7">
+						<p className="max-w-2xl text-lg font-light sm:text-2xl mt-7">
 							Reach new markets with the reshipping platform built
 							specifically for resellers
 						</p>
@@ -101,7 +101,7 @@ export default function Home() {
 					Partnered with industry leading communities
 				</h2>
 			</div>
-			<div className="flex flex-row gap-8 px-3 m-auto text-center mt-36 max-w-7xl">
+			<div className="flex flex-col gap-8 px-3 m-auto text-center sm:flex-row mt-36 max-w-7xl">
 				<div className="flex flex-col rounded-lg">
 					<Image
 						src="/credit-card.svg"
@@ -148,7 +148,7 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="h-12 bg-[url('http://www.slickreship.com/angle.png')] bg-cover mt-32" />
+			<div className="h-12 bg-[url('http://www.slickreship.com/angle.png')] bg-cover mt-32 mb-[-1px]" />
 			<div className="text-white bg-primary">
 				<div className="flex flex-col items-center px-3 m-auto my-24 max-w-7xl">
 					<h2 className="text-4xl font-bold text-center ">
@@ -286,7 +286,7 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<div className="w-full py-16 bg-gray-100 scroll-m-36" id="pricing">
+			<div className="w-full px-2 py-16 bg-gray-100 scroll-m-36" id="pricing">
 				<div className="flex flex-col items-center justify-center m-auto max-w-7xl">
 					<h2 className="text-3xl font-bold">
 						Choose the plan that&apos;s right for you
@@ -374,7 +374,7 @@ export default function Home() {
 				</div>
 			</div>
 			<div
-				className="flex flex-col items-center justify-center max-w-3xl m-auto mt-24 scroll-m-40"
+				className="flex flex-col items-center justify-center max-w-3xl px-2 m-auto mt-24 scroll-m-40"
 				id="faqs"
 			>
 				<h2 className="text-3xl font-bold ">

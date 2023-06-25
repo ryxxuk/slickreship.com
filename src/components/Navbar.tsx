@@ -30,7 +30,6 @@ const Navbar = () => {
 			) {
 				return;
 			}
-			console.log("close");
 			closeMobileMenu();
 		},
 		[mobileMenuOpen]
@@ -50,13 +49,12 @@ const Navbar = () => {
 		<nav
 			className={`sticky top-0 z-10 items-center w-full duration-150 ease-linear ${
 				navbarScrolled
-					? "bg-white border-b border-gray-200 shadow-sm"
+					? "bg-white border-b border-gray-500 shadow-sm"
 					: "bg-primary text-white "
 			}`}
 			id="navbar"
 		>
 			<div className="flex justify-between px-3 m-auto xl:px-0 max-w-7xl">
-				
 					<Image
 						src="./logo-dark.svg"
 						alt="logo"

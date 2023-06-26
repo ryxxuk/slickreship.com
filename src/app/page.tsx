@@ -1,7 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Home() {
+	useEffect(() => {
+		AOS.init();
+	}, []);
+
 	return (
 		<main className="flex flex-col text-tblack">
 			<div id="main-content" className="max-h-[870px]">
@@ -30,7 +39,7 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-col items-center px-3 m-auto mt-24 max-w-7xl">
+			<div className="flex flex-col items-center px-3 m-auto mt-24 max-w-7xl" data-aos="fade-up">
 				<div className="flex flex-row flex-wrap items-center justify-center gap-6 text-xl font-bold">
 					<Link href="https://restock.gg/">
 						<div className="flex flex-row place-items-center">
@@ -102,7 +111,7 @@ export default function Home() {
 				</h2>
 			</div>
 			<div className="flex flex-col gap-8 px-3 m-auto text-center sm:flex-row mt-36 max-w-7xl">
-				<div className="flex flex-col rounded-lg">
+				<div data-aos="fade-right">
 					<Image
 						src="/credit-card.svg"
 						alt="logo"
@@ -118,7 +127,7 @@ export default function Home() {
 						what it takes to run a successful reshipping business.
 					</p>
 				</div>
-				<div>
+				<div data-aos="fade-up">
 					<Image
 						src="/codesandbox.svg"
 						alt="logo"
@@ -132,7 +141,7 @@ export default function Home() {
 						what it takes to run a successful reshipping business.
 					</p>
 				</div>
-				<div>
+				<div data-aos="fade-left">
 					<Image
 						src="/anchor.svg"
 						alt="logo"
@@ -151,11 +160,11 @@ export default function Home() {
 			<div className="h-12 bg-[url('http://www.slickreship.com/angle.png')] bg-cover mt-32 mb-[-1px]" />
 			<div className="text-white bg-primary">
 				<div className="flex flex-col items-center px-3 m-auto my-24 max-w-7xl">
-					<h2 className="text-4xl font-bold text-center ">
+					<h2 className="text-4xl font-bold text-center" data-aos="fade-up">
 						Pricing that works for you
 					</h2>
 					<div className="flex flex-row gap-16 mt-16">
-						<div className="hidden sm:flex">
+						<div className="hidden sm:flex" data-aos="fade-right">
 							<Image
 								src="/shelfs.png"
 								width={350}
@@ -164,7 +173,7 @@ export default function Home() {
 								className="object-contain"
 							/>
 						</div>
-						<div className="flex flex-col">
+						<div className="flex flex-col" data-aos="fade-left">
 							<h2 className="text-2xl font-semibold">
 								Reshipping Rates
 							</h2>
@@ -219,7 +228,7 @@ export default function Home() {
 				className="flex flex-col items-center max-w-4xl px-3 m-auto my-24 scroll-m-40"
 				id="features"
 			>
-				<div className="relative">
+				<div className="relative" data-aos="fade-up">
 					<h2 className="p-6 text-4xl font-bold">Our Features</h2>
 					<Image
 						src="/circledrawing.svg"
@@ -231,7 +240,7 @@ export default function Home() {
 				</div>
 
 				<div className="grid grid-cols-2 gap-16 mt-16">
-					<div className="flex flex-col col-span-full md:col-span-1">
+					<div className="flex flex-col col-span-full md:col-span-1" data-aos="fade-right">
 						<h3 className="text-2xl font-bold">Cash on Delivery</h3>
 						<p>
 							We provide access to select reshippers accepting
@@ -239,7 +248,7 @@ export default function Home() {
 							delivery, and they can pay for you.
 						</p>
 					</div>
-					<div className="flex flex-col col-span-full md:col-span-1">
+					<div className="flex flex-col col-span-full md:col-span-1" data-aos="fade-left">
 						<h3 className="text-2xl font-bold">
 							Consolidation Service
 						</h3>
@@ -248,7 +257,7 @@ export default function Home() {
 							shipment, saving you money on shipping costs.
 						</p>
 					</div>
-					<div className="flex flex-col col-span-full md:col-span-1">
+					<div className="flex flex-col col-span-full md:col-span-1" data-aos="fade-right">
 						<h3 className="text-2xl font-bold">
 							30 days free storage
 						</h3>
@@ -257,7 +266,7 @@ export default function Home() {
 							breathing room when selling your items.
 						</p>
 					</div>
-					<div className="flex flex-col col-span-full md:col-span-1">
+					<div className="flex flex-col col-span-full md:col-span-1" data-aos="fade-left">
 						<h3 className="text-2xl font-bold">
 							Repacking Service
 						</h3>
@@ -267,7 +276,7 @@ export default function Home() {
 							safe and sound.
 						</p>
 					</div>
-					<div className="flex flex-col col-span-full md:col-span-1">
+					<div className="flex flex-col col-span-full md:col-span-1" data-aos="fade-right">
 						<h3 className="text-2xl font-bold">Raffle Entries</h3>
 						<p>
 							Sick of missing raffles in other countries? Gain
@@ -275,7 +284,7 @@ export default function Home() {
 							never miss a drop again.
 						</p>
 					</div>
-					<div className="flex flex-col col-span-full md:col-span-1">
+					<div className="flex flex-col col-span-full md:col-span-1" data-aos="fade-left">
 						<h3 className="text-2xl font-bold">
 							Shipping to Platforms
 						</h3>
@@ -298,8 +307,8 @@ export default function Home() {
 						Free trial on all plans above monthly
 					</h3>
 					<div className="flex flex-col-reverse gap-8 mt-8 sm:flex-row">
-						<div className="flex flex-col flex-1 px-6 py-10 bg-white border border-gray-300 rounded shadow-lg">
-							<h3 className="text-2xl font-bold text-center ">
+						<div className="flex flex-col flex-1 px-6 py-10 bg-white border border-gray-300 rounded shadow-lg" data-aos="fade-right">
+							<h3 className="text-2xl font-bold text-center">
 								Monthly
 							</h3>
 							<h4 className="text-xl font-semibold text-center">
@@ -319,7 +328,7 @@ export default function Home() {
 								</button>
 							</Link>
 						</div>
-						<div className="relative flex flex-col flex-1 px-6 py-10 bg-white border border-gray-300 rounded shadow-lg">
+						<div className="relative flex flex-col flex-1 px-6 py-10 bg-white border border-gray-300 rounded shadow-lg" data-aos="fade-up">
 							<div className="absolute top-2 right-[-10px]  rounded bg-gradient-to-tr from-primary to-blue-400 px-4 py-1 font-bold text-white">
 								Most Popular
 							</div>
@@ -347,12 +356,12 @@ export default function Home() {
 								target="_blank"
 								className="mx-auto mt-auto"
 							>
-								<button className="px-6 py-2 mx-auto mt-auto text-white bg-black border border-black rounded w-fit hover:bg-white hover:text-black">
+								<button className="px-6 py-2 mx-auto mt-auto text-white bg-black border border-black rounded w-fit hover:bg-white hover:text-black" >
 									Start Free Trial
 								</button>
 							</Link>
 						</div>
-						<div className="relative flex flex-col flex-1 px-6 py-10 bg-white border border-gray-300 rounded shadow-lg">
+						<div className="relative flex flex-col flex-1 px-6 py-10 bg-white border border-gray-300 rounded shadow-lg" data-aos="fade-left">
 							<div className="absolute top-2 right-[-10px]  rounded bg-gradient-to-tr from-[#56ab2f] to-[#a8e063] px-4 py-1 font-bold text-white">
 								Cheapest
 							</div>

@@ -24,7 +24,7 @@ export default function Home() {
 							specifically for resellers
 						</p>
 						<Link href="#pricing">
-							<button className="py-2 mt-10 text-lg duration-200 ease-linear bg-black rounded px-14 w-fit hover:bg-white hover:text-black">
+							<button className="py-2 mt-10 text-lg duration-200 ease-linear bg-black rounded px-14 w-fit hover:bg-white hover:text-black" data-aos="ease-in-out-back">
 								Get Started
 							</button>
 						</Link>
@@ -35,6 +35,7 @@ export default function Home() {
 							width={500}
 							height={500}
 							className="mt-12"
+							priority
 						/>
 					</div>
 				</div>
@@ -349,7 +350,7 @@ export default function Home() {
 									width={20}
 									height={20}
 								/>
-								17% Cheaper per month.
+								17% Cheaper
 							</div>
 							<Link
 								href="https://dashboard.slickreship.com/checkout/plan_6iPUrMTxvApkb?d2c=true"
@@ -382,7 +383,7 @@ export default function Home() {
 									width={20}
 									height={20}
 								/>
-								33% Cheaper per month.
+								33% Cheaper
 							</div>
 							<Link
 								href="https://dashboard.slickreship.com/checkout/plan_46zd5e8VXtR7L?d2c=true"

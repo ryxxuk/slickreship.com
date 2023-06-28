@@ -112,6 +112,7 @@ const Navbar = () => {
 							width={20}
 							id="menu-light"
 							className={navbarScrolled ? "hidden" : "block"}
+							priority
 						/>
 					</button>
 					<div
